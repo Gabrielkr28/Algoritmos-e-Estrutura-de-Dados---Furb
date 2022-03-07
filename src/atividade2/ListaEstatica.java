@@ -1,6 +1,6 @@
 package atividade2;
 
-public class ListaEstatica <E> {
+public class ListaEstatica<E> {
 
 	private Object[] info;
 	private Integer tamanho;
@@ -139,6 +139,11 @@ public class ListaEstatica <E> {
 	public Integer getTamanho() {
 		return tamanho;
 	}
+
+	/*
+	 * Este método deverá inverter a ordem em que os dados estão armazenados na
+	 * estrutura de dados, sem criar outro vetor.
+	 */
 
 	public void inverter() {
 		int value = 0;
