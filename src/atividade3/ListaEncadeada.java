@@ -9,7 +9,7 @@ public class ListaEncadeada<T> {
 	 */
 
 	public ListaEncadeada() {
-		primeiro = null;
+
 	}
 
 	/* getPrimeiro(): método getter da variável primeiro. */
@@ -31,6 +31,7 @@ public class ListaEncadeada<T> {
 		novo.setProximo(primeiro);
 
 		this.primeiro = novo;
+
 	}
 
 	/*
@@ -39,12 +40,33 @@ public class ListaEncadeada<T> {
 	 */
 
 	public Boolean estaVazia() {
-		if (primeiro == null) {
-			return true;
-		}
-		return false;
+		return primeiro == null;
+
+	}
+
+	/*
+	 * buscar(T): Deve procurar na lista encadeada se há um nó cujo conteúdo seja
+	 * igual à variável info. Caso seja localizado, deverá retornar este nó (objeto
+	 * da classe NoLista). Se não for localizado, deverá retornar null.
+	 */
+
+	public NoLista<T> buscar(T info) {
+		return null;
 	}
 	
-	
+	@Override
+	public String toString() {
+		StringBuffer buffer = new StringBuffer();
+		buffer.append("[");
+		
+		NoLista p = primeiro;
+		
+		while(p != null) {
+			buffer.append(p.getInfo() + " ");
+			p = p.getProximo();
+		}
+		buffer.append("]");
+		return buffer.toString();
+	}
 
 }
