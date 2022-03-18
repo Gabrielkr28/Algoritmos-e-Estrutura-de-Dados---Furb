@@ -5,9 +5,12 @@ public class RunProject {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		ListaEncadeada<Integer> encadeada = new ListaEncadeada<Integer>();
+		ListaEncadeada<String> encadeada = new ListaEncadeada<String>();
 		
-		encadeada.toString();
+		encadeada.inserir("Teste1");
+		encadeada.inserir("Teste2");
+		encadeada.inserir("Teste3");
+		encadeada.inserir("Teste4");
 
 	}
 
